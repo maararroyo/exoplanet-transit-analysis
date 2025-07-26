@@ -1,69 +1,51 @@
-# exoplanet-transit-analysis
+# Análisis de Sistemas Planetarios Usando Python
 
-Este repositorio contiene el análisis de tránsitos de sistemas planetarios (**HD 156668, Kepler-10, Kepler-9, Kepler-419**) usando `lightkurve`, `radvel` y fórmulas de astrofísica para estimar parámetros estelares y orbitales sin depender del NASA Exoplanet Archive.
-
-También se incluyen visualizaciones de arquitectura orbital generadas con `matplotlib`.
-
-Este proyecto fue desarrollado como parte de la materia *Física del Universo* (ITAM, verano 2025).
+Este repositorio contiene el análisis físico y orbital de cuatro sistemas planetarios reales, realizado con Python como parte del curso *Física del Universo* (ITAM, 2025). El estudio se basa en datos públicos y software libre como `lightkurve` y `radvel`, trabajando directamente sobre curvas de luz y simulaciones keplerianas.
 
 Autores: Mariana Arroyo y Uriel Sagahon
 
 ---
 
-##  Ensayo
+## 📄 Ensayo Final
 
-El documento completo con introducción teórica, resultados y conclusiones se encuentra aquí:
+El documento completo del proyecto, con introducción teórica, metodología, resultados y conclusiones, está disponible en el siguiente archivo PDF:
 
-
-
----
-
-## Herramientas usadas
-
-- [Lightkurve](https://docs.lightkurve.org/): descarga, limpieza y análisis de curvas de luz.
-- [Radvel](https://radvel.readthedocs.io/): ajuste de modelos keplerianos de velocidad radial.
-- Python, NumPy, Matplotlib, JupyterLab.
+📘 [Análisis de Sistemas Planetarios (PDF)](./Análisis%20de%20Sistemas%20Planetarios.pdf)
 
 ---
 
-## Sistemas Analizados
+## 🛠 Herramientas Utilizadas
 
-### 1. Kepler-10
-
-Estrella tipo G, 2 planetas confirmados. Primer planeta rocoso validado por tránsito.
-
-[Notebook del análisis](notebooks/Kepler-10.ipynb)
+- [Lightkurve](https://docs.lightkurve.org/): para descarga, limpieza y análisis de curvas de luz astronómicas.
+- [Radvel](https://radvel.readthedocs.io/): para ajuste de velocidades radiales usando modelos keplerianos.
+- Python, Jupyter Notebooks, NumPy, Matplotlib, Pandas.
 
 ---
 
-### 2. Kepler-9
+## 🌌 Sistemas Analizados
 
-Sistema resonante con 3 planetas, detectados por tránsito.
+Todos los resultados (códigos, cálculos, visualizaciones, curvas de luz y diagramas orbitales) están documentados en los siguientes notebooks:
 
-[Notebook del análisis](notebooks/Kepler-9.ipynb)
-
----
-
-### 3. Kepler-419
-![Excentricidad extrema](figures/arquitectura_kepler419.png)
-
-Sistema con fuerte excentricidad (e ≈ 0.83) detectada por velocidad radial.
-
-[Notebook del análisis](notebooks/kepler-419.ipynb)
+| Sistema      | Descripción breve                                           | Notebook |
+|--------------|-------------------------------------------------------------|----------|
+| **Kepler-10**  | Primer planeta rocoso confirmado fuera del Sistema Solar   | [Abrir](./Kepler-10.ipynb) |
+| **Kepler-9**   | Sistema con 3 planetas y resonancia orbital                | [Abrir](./Kepler-9.ipynb) |
+| **Kepler-419** | Sistema con excentricidad extrema (e ≈ 0.83)               | [Abrir](./Kepler-419.ipynb) |
+| **HD 156668**  | Sistema con planeta de muy baja masa, detectado por RV     | [Abrir](./HD156668.ipynb) |
 
 ---
 
-### 4. HD 156668
+## 🎥 Presentación del Proyecto
 
-Sistema con un planeta de masa muy baja, detectado vía velocidad radial.
+Puedes visualizar nuestra presentación interactiva (con video) desarrollada en Canva, aquí:
 
-[Notebook del análisis](notebooks/HD156668.ipynb)
+▶️ [Ver presentación en Canva](https://www.canva.com/design/DAGt13VPQ3o/Wwz4CQCLdmznDXnXPBp8EA/edit?utm_content=DAGt13VPQ3o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ---
 
-## Requisitos
+## ⚙️ Requisitos Técnicos
 
-Instala las dependencias con:
+Para ejecutar los notebooks, recomendamos crear un entorno virtual e instalar las dependencias necesarias con:
 
 ```bash
-pip install -r requirements.txt
+pip install lightkurve radvel numpy matplotlib pandas
