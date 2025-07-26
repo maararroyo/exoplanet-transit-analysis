@@ -14,7 +14,7 @@ Autores: Mariana Arroyo y Uriel Sagahon
 
 El documento completo con introducción teórica, resultados y conclusiones se encuentra aquí:
 
-[Ver PDF del ensayo](ensayo/Proyecto%20Final%20Física.pdf)
+
 
 ---
 
@@ -29,20 +29,18 @@ El documento completo con introducción teórica, resultados y conclusiones se e
 ## Sistemas Analizados
 
 ### 1. Kepler-10
-![Arquitectura Kepler-10](figures/arquitectura_kepler10.png)
 
 Estrella tipo G, 2 planetas confirmados. Primer planeta rocoso validado por tránsito.
 
-[Notebook del análisis](notebooks/kepler-10.ipynb)
+[Notebook del análisis](notebooks/Kepler-10.ipynb)
 
 ---
 
 ### 2. Kepler-9
-![Curva de luz](figures/curva_luz_kepler9.png)
 
 Sistema resonante con 3 planetas, detectados por tránsito.
 
-[Notebook del análisis](notebooks/kepler-9.ipynb)
+[Notebook del análisis](notebooks/Kepler-9.ipynb)
 
 ---
 
@@ -56,7 +54,6 @@ Sistema con fuerte excentricidad (e ≈ 0.83) detectada por velocidad radial.
 ---
 
 ### 4. HD 156668
-![Diagrama HR](figures/HR_diagram_HD156668.png)
 
 Sistema con un planeta de masa muy baja, detectado vía velocidad radial.
 
@@ -64,7 +61,7 @@ Sistema con un planeta de masa muy baja, detectado vía velocidad radial.
 
 ---
 
-## ⚙️ Requisitos
+## Requisitos
 
 Instala las dependencias con:
 
